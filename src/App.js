@@ -1,25 +1,61 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react'
+import Nav from './components/Nav';
+import Rout from './components/Rout';
+import Footer from './components/Footer';
+import Data from './components/Data';
 
-function App() {
+
+const App = ({searchbtn}) => {
+  //add to wishlist
+  const [wishlist, setWishlist] = useState([])
+ 
+  //Jersey Details
+  const [close, setClose] = useState(false)
+  const [detail, setDetail] = useState([])
+  
+  //filter jersey
+  const [jersey, setJersey] = useState(Data)
+  
+  
+  //jersey detail
+  const view = (jersey) =>
+  {
+    setDetail([{...jersey}])
+    setClose(true)
+  }
+  
+  //add to wishlist
+ 
+  const addToWishlist = (jersey) =>
+  
+  {
+
+    const exit = wishlist.find((x) =>
+    {
+      return x.id === jersey.id
+    }
+    )
+    
+    if(exit)
+    {
+      alert("This jersey has already been added to your wishlist")
+    }
+    else
+    {
+      setWishlist([...wishlist, {...jersey}])
+      alert("This jersey has been added to your wishlist")
+    }
+  }
+ 
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Nav />      
+      <Rout jersey={jersey} setJersey={setJersey} detail = {detail} view = {view} close = {close} setClose = {setClose} wishlist ={wishlist} setWishlist = {setWishlist} addToWishlist={addToWishlist} searchbtn = {searchbtn} />
+      <Footer />
+
+    </>
+  )
 }
 
 export default App;

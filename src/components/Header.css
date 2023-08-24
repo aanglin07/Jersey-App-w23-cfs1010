@@ -1,0 +1,23 @@
+.app_name
+{
+    font-weight: 600;
+    font-size: 17px;
+    text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+    margin-left: 5px;    
+
+}
+
+.app_name a
+{
+    text-decoration: none;
+    color:black;
+}
+
+@media screen and (max-width: 790px)
+{
+    .app_name h1
+    {
+        padding-left: 10px;
+        
+    }
+}
