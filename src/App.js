@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
-import Nav from './components/Nav';
-import Rout from './components/Rout';
-import Footer from './components/Footer';
-import Data from './components/Data';
+import Nav from './components/features/Nav';
+import Rout from './components/features/Rout';
+import Footer from './components/features/Footer';
+import Data from './components/features/Data';
 
 
 const App = ({searchbtn}) => {

@@ -4,7 +4,7 @@ import { BsEye } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
 import { RiHeartAddLine } from "react-icons/ri";
 import { useAuth0 } from "@auth0/auth0-react";
-import Data from '../Data';
+import Data from '../features/Data';
 import {React, useState} from 'react';
 import { Link } from 'react-router-dom';
 
