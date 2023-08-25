@@ -8,6 +8,7 @@ import Data from '../features/Data';
 import {React, useState} from 'react';
 import { Link } from 'react-router-dom';
 
+
 const Jerseys = ({jersey, setJersey, detail, view, close, setClose, addToWishlist}) => {
   const [query, setQuery] = useState("")
   const { loginWithRedirect, isAuthenticated} = useAuth0();
@@ -65,7 +66,7 @@ const Jerseys = ({jersey, setJersey, detail, view, close, setClose, addToWishlis
 
                                 }
                     
-                    <Link to={curElm.img} target="_blank"><button>Purchase here</button></Link>
+                    <Link to={curElm.purchaseLink} target="_blank"><button>Purchase here</button></Link>
                     </div>
                 </div>
               )
@@ -89,6 +90,19 @@ const Jerseys = ({jersey, setJersey, detail, view, close, setClose, addToWishlis
             <input type='text' value={query} placeholder='Search Team...' autoComplete='off' onChange={(e) => setQuery(e.target.value)} />
             <button onClick={()=>searchbtn(query)}>Search</button>
         </div>
+        <div className="dropdown">
+            
+            <select id="leagues" onChange={(e) => filterjersey(e.target.value)} placeholder='Search leagues'>
+                <option value="" selected disabled hidden>Choose here</option>
+                <option>English Premier League</option>
+                <option>La Liga</option>
+                <option>Serie A</option>
+               
+            </select>
+            <button onClick={() => AllJerseys()}>Show All</button>
+
+                       
+        </div>
       <div className='container'>
           <div className='filter'>
               <div className='leagues'>
@@ -97,9 +111,11 @@ const Jerseys = ({jersey, setJersey, detail, view, close, setClose, addToWishlis
                   <li onClick={() => AllJerseys()}>All Jerseys</li>
                     <li onClick={() => filterjersey("English Premier League")}>English Premier League</li>
                     <li onClick={() => filterjersey("La Liga")}>La Liga</li>
-                    <li onClick={() => filterjersey("Serie A")}>Serie A</li>
+                    <li onClick={() => filterjersey("Serie A")}>Serie A</li>                    
                   </ul>
+                  
               </div>
+              
           </div>
           
           <div className='jerseybox'>
