@@ -45,7 +45,7 @@ const Wishlist = ({wishlist, setWishlist}) => {
                                     <h4>{curElm.category}</h4>
                                     <h3>{curElm.teamName} - {curElm.teamKit} - {curElm.Year}</h3>
                                     <button onClick={() => removeJersey(curElm)} className='removeBtn'>Remove</button>
-                                    <Link to={curElm.img} target="_blank"><button className='purchBtn'>Purchase here</button></Link>
+                                    <Link to={curElm.purchaseLink} target="_blank"><button className='purchBtn'>Purchase here</button></Link>
                                    
                                 </div>
                                 

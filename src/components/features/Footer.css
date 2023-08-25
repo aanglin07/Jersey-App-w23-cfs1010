@@ -61,7 +61,7 @@
 .footer .container .account
 {
     margin-right: 100px;
-    margin-top: 12px;
+    
 }
 
 .footer .container .account h3
@@ -96,7 +96,7 @@
 .footer .container .page
 {
     margin-right: 100px;
-    margin-top: 12px;
+    
 }
 
 .footer .container .page h3
@@ -141,6 +141,56 @@
     color: white;
 }
 
+@media screen and (max-width: 780px)
+{
+    .footer .container
+{
+    max-width: 100%;
+    display: flex;
+    
+    
+}
+}
+
+@media screen and (max-width: 780px)
+{
+    .footer .container .page
+{
+    padding-left: 100px;
+    
+}
+
+}
+
+@media screen and (max-width: 780px)
+{
+    .footer .container .account h3
+    {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 580px)
+{
+    .footer .container
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .mobile_resp
+    {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .app_social_resp
+    {
+        display: flex;
+        align-items: center;
+    }
+
+}
 
 
 

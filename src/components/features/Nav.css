@@ -124,6 +124,11 @@
     font-size: 22px;
     cursor: pointer;
 }
+
+.nav_header .menu_container .login p
+{
+    margin-right: 100px;
+}
 .search_box
 {
     margin-right: 30px;
@@ -172,6 +177,11 @@
 .resp_menu ul
 {
     display: none;
+}
+
+.loginInfo .icon
+{
+    margin-right: 100px;
 }
 
 @media screen and (max-width: 790px){
@@ -223,7 +233,7 @@
 
     .nav_header
     {
-        background: white;
+        display: none;
     }
 
     .main_header

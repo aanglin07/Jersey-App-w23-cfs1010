@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import {BiPurchaseTagAlt} from 'react-icons/bi';
 import {BsFillBagHeartFill} from 'react-icons/bs';
 import { GiSoccerKick } from 'react-icons/gi';
@@ -17,11 +17,19 @@ const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   let menuRef = useRef();
   
-  // const AllJerseys = () =>
-  // {
-  //   setJersey(Data)
-  // }
+  useEffect(() => {let handler = (e)=>{
   
+    if (!menuRef.current.contains(e.target)){
+    setMenuOpen(false);
+    }  
+    
+  };
+      document.addEventListener("mousedown", handler)
+      
+       return () => {
+        document.removeEventListener("mousedown", handler)
+      } 
+    })  
   return (
       <div>
         
@@ -94,7 +102,7 @@ const Nav = () => {
                           <Link to="/" className='link'>Home</Link>
                       </li>
                       <li>
-                          <Link to="/jerseys" className='link'>Jerseys</Link>
+                          <Link to="/jerseys"  className='link'>Jerseys</Link>
                       </li>
                       <li>
                           <Link to="/about" className='link'>About Us</Link>

@@ -12,22 +12,28 @@ const Footer = () => {
         <div className='footer'>
             <div className='container'>
                 <div className='about'>
+                   
+                   <div className='app_social_resp'>
                     <div className='app_name'>
-                        <h1>Jersey App</h1>
+                    <Link to="/" className='link'><h1>Jersey App</h1></Link>
                     </div>
                     <div className='detail'>
                            
                         <div className='icon'>
                         
-                        <li><FaTiktok /></li>
-                        <li><FaFacebookF /></li>
-                        <li><AiOutlineInstagram /></li>
-                    
+                        <Link to='https://www.tiktok.com/' target="_blank"><li><FaTiktok /></li></Link>
+                        <Link to='https://www.facebook.com/' target="_blank"><li><FaFacebookF /></li></Link>
+                        <Link to='https://www.instagram.com/' target="_blank"><li><AiOutlineInstagram /></li></Link>
+                        
                 </div> 
-                        <p>{"©" + currentYear} Jersey App</p>                       
+                
+                                              
                     </div>
+                    </div>
+                    <p>{"©" + currentYear} Jersey App</p> 
                    
                 </div>
+            
             
             <div className='page'>
                 <h3>Pages</h3>
@@ -45,9 +51,9 @@ const Footer = () => {
                 <Link to="/wishlist" className='link'><li>Wishlist</li></Link>
                 </ul>
             </div>
-            
+         
             </div>
-
+            
         </div>
     </>
   )
