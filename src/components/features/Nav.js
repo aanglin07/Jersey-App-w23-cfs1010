@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import { useAuth0 } from "@auth0/auth0-react";
 import NavTop from './NavTop';
 import HamburgerMenu from './HamburgerMenu';
+import RespMenu from './RespMenu';
 // import Data from './Data';
 
 
@@ -37,26 +38,9 @@ const Nav = () => {
               <NavTop />
               <div className='main_header'>
               <HamburgerMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+              <RespMenu menuRef={menuRef} menuOpen={menuOpen} />
               
-              <div className='resp_menu' ref={menuRef}>
-                  <div className='resp_nav'>
-                 
-                  <ul className = {menuOpen ? "open" : ""}>
-                      <li>
-                          <Link to="/" className='link'>Home</Link>
-                      </li>
-                      <li>
-                          <Link to="/jerseys" className='link'>Jerseys</Link>
-                      </li>
-                      <li>
-                          <Link to="/about" className='link'>About Us</Link>
-                      </li>
-                      <li>
-                          <Link to="/contact" className='link'>Contact</Link>
-                      </li>
-                  </ul>
-                  </div>
-                  </div>
+              
                   <div className='container'>
                   
                       <Header />
