@@ -1,13 +1,14 @@
 import React, { useState, useRef, useEffect } from 'react'
-import {BsFillBagHeartFill} from 'react-icons/bs';
-import { GiSoccerKick } from 'react-icons/gi';
+// import {BsFillBagHeartFill} from 'react-icons/bs';
+// import { GiSoccerKick } from 'react-icons/gi';
 import './Nav.css'
-import Header from './Header';
+// import Header from './Header';
 import { Link } from 'react-router-dom';
 import { useAuth0 } from "@auth0/auth0-react";
 import NavTop from './NavTop';
 import HamburgerMenu from './HamburgerMenu';
 import RespMenu from './RespMenu';
+import LoginSection from './LoginSection';
 // import Data from './Data';
 
 
@@ -39,33 +40,8 @@ const Nav = () => {
               <div className='main_header'>
               <HamburgerMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
               <RespMenu menuRef={menuRef} menuOpen={menuOpen} />
-              
-              
-                  <div className='container'>
+              <LoginSection isAuthenticated={isAuthenticated} user={user} />          
                   
-                      <Header />
-                      
-                    <div className='LoginInfo'> 
-                    <div className='icon'>
-                        {
-                          isAuthenticated &&
-                          (
-                            <div className='account'>
-                            <div className='user_icon'>
-                                <GiSoccerKick />
-                            </div>
-                            <p>Hello, {user.name}</p>
-
-                        </div>
-                          )
-                        }
-                        
-                      <div className='bag_icon'>
-                          <Link to="/wishlist" className='link'><BsFillBagHeartFill /></Link>
-                      </div>
-                    </div>
-                  </div>
-            </div>
             </div>
             <div className='nav_header'>
                         
