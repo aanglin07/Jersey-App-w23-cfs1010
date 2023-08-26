@@ -215,7 +215,7 @@
 
 .jerseys .search_box
 {
-    margin-left: 500px;
+    margin-left: 200px;
 }
 
 .jerseybox .detailInfo button
@@ -237,4 +237,73 @@
 .dropdown
 {
     display:none;
+    padding-top: 20px;
+    margin-left: 200px;
+    margin-right: 20px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    height: 10px;
 }
+
+.dropdown button
+{
+    margin-left: 20px;
+    text-decoration: none;
+    color:white;
+    padding:10px 20px;
+    background: black;
+}
+
+@media screen and (max-width: 900px){
+    .jerseys .search_box
+    {
+        margin-left: 200px;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .dropdown
+    {
+        display: block;
+        margin-left: 150px;
+    }
+}
+
+@media screen and (max-width: 780px)
+{
+    .dropdown
+    {
+        display: block;
+        margin-left: 20px;
+        
+    }
+    .container .filter
+    {
+        display: none;
+    }
+
+    .search_box
+    {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 750px)
+{
+    .container .filter
+    {
+        display: none;
+    }
+    .jerseys .search_box
+    {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .dropdown
+    {
+        display: block;
+        margin-left: 20px;
+    }
+}
+

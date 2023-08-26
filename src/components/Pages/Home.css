@@ -4,6 +4,7 @@
     padding: 0;
     font-family: sans-serif;
     box-sizing: border-box;
+    
 }
 
 .top_banner
@@ -66,7 +67,7 @@
 
 .top_banner .container .detail a
 {
-    font-size: 12px;   
+    font-size: 10px;   
 }
 }
 

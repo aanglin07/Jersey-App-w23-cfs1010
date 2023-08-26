@@ -93,7 +93,7 @@ const Jerseys = ({jersey, setJersey, detail, view, close, setClose, addToWishlis
         <div className="dropdown">
             
             <select id="leagues" onChange={(e) => filterjersey(e.target.value)} placeholder='Search leagues'>
-                <option value="" selected disabled hidden>Choose here</option>
+                <option value="" selected disabled hidden>Search by League</option>
                 <option>English Premier League</option>
                 <option>La Liga</option>
                 <option>Serie A</option>

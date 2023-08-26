@@ -50,10 +50,11 @@ const App = ({searchbtn}) => {
   
   return (
     <>
+      
       <Nav />      
       <Rout jersey={jersey} setJersey={setJersey} detail = {detail} view = {view} close = {close} setClose = {setClose} wishlist ={wishlist} setWishlist = {setWishlist} addToWishlist={addToWishlist} searchbtn = {searchbtn} />
       <Footer />
-
+      
     </>
   )
 }
