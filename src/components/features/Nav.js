@@ -1,11 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react'
-import {BiPurchaseTagAlt} from 'react-icons/bi';
 import {BsFillBagHeartFill} from 'react-icons/bs';
 import { GiSoccerKick } from 'react-icons/gi';
 import './Nav.css'
 import Header from './Header';
 import { Link } from 'react-router-dom';
 import { useAuth0 } from "@auth0/auth0-react";
+import NavTop from './NavTop';
+import HamburgerMenu from './HamburgerMenu';
 // import Data from './Data';
 
 
@@ -33,20 +34,10 @@ const Nav = () => {
   return (
       <div>
         
-          <div className='affiliate'>
-          
-            <div className='banner_icon'><BiPurchaseTagAlt /></div>
-              <p> Make purchases through Affiliate Links</p>
-            </div>
+              <NavTop />
               <div className='main_header'>
-              <div className = 'navMenu'  onClick = {() => {
+              <HamburgerMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
               
-              setMenuOpen(!menuOpen)
-                    }} >
-                    <span></span>
-                    <span></span>
-                    <span></span>
-              </div>
               <div className='resp_menu' ref={menuRef}>
                   <div className='resp_nav'>
                  
