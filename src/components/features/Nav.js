@@ -1,15 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react'
-// import {BsFillBagHeartFill} from 'react-icons/bs';
-// import { GiSoccerKick } from 'react-icons/gi';
 import './Nav.css'
-// import Header from './Header';
 import { Link } from 'react-router-dom';
 import { useAuth0 } from "@auth0/auth0-react";
 import NavTop from './NavTop';
 import HamburgerMenu from './HamburgerMenu';
 import RespMenu from './RespMenu';
 import LoginSection from './LoginSection';
-// import Data from './Data';
+
 
 
 
@@ -36,48 +33,34 @@ const Nav = () => {
   return (
       <div>
         
-              <NavTop />
-              <div className='main_header'>
+            <NavTop />
+            <div className='main_header'>
               <HamburgerMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
               <RespMenu menuRef={menuRef} menuOpen={menuOpen} />
-              <LoginSection isAuthenticated={isAuthenticated} user={user} />          
-                  
+              <LoginSection isAuthenticated={isAuthenticated} user={user} />                  
             </div>
-            <div className='nav_header'>
-                        
+            
+            <div className='nav_header'>                        
               <div className='menu_container'>
-                  <div className='nav'>
-                 
+                  <div className='nav'>                 
                   <ul>
-                      <li>
-                          <Link to="/" className='link'>Home</Link>
-                      </li>
-                      <li>
-                          <Link to="/jerseys"  className='link'>Jerseys</Link>
-                      </li>
-                      <li>
-                          <Link to="/about" className='link'>About Us</Link>
-                      </li>
-                      <li>
-                          <Link to="/contact" className='link'>Contact</Link>
-                      </li>
+                      <li><Link to="/" className='link'>Home</Link></li>
+                      <li><Link to="/jerseys"  className='link'>Jerseys</Link></li>
+                      <li><Link to="/about" className='link'>About Us</Link></li>
+                      <li><Link to="/contact" className='link'>Contact</Link></li>
                   </ul>
                   </div>
                   
                   <div className='login'>
-
                   {
                     isAuthenticated ?
                     <p onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>Logout</p>
                     :
                     <p onClick={()=> loginWithRedirect()}>Login</p>
-                  }
-                      
-                      
+                  }                     
                   </div>
               </div>
-            </div>
-          
+            </div>          
       </div>
   )     
   
