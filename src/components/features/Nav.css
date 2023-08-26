@@ -217,8 +217,12 @@
   
     .resp_nav ul li a{
       margin:0.2rem 0.5rem;
-      border:solid
+      border:1px solid white;
     }
+    .resp_nav ul li a:not(.active):hover{
+        background-color:grey;
+      }
+
     .resp_nav ul.open{
       display:flex;
       width:200px;
@@ -297,6 +301,41 @@
       {
         display: none;
       }
+
+      .resp_nav ul.open
+    {
+        margin-left: -300px;
+    }
+  
   }
 
+  @media screen and (max-width: 490px)
+  {
+    .resp_nav ul.open
+    {
+        margin-left: -160px;
+    }
+  }
 
+  @media screen and (max-width: 506px)
+  {
+    .resp_nav ul.open
+    {
+        margin-left: -170px;
+    }
+  }
+
+  @media screen and (max-width: 722px)
+  {
+    .resp_nav ul.open
+    {
+        margin-left: -290px;
+    }
+  }
+  @media screen and (max-width: 600px)
+  {
+    .resp_nav ul.open
+    {
+        margin-left: -230px;
+    }
+  }
