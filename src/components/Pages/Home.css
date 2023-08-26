@@ -56,6 +56,21 @@
     
     
 }
+@media screen and (max-width: 580px)
+{
+    .top_banner .container .detail h2
+{
+    font-size: 25px;
+    margin-bottom: 10px;   
+}
+
+.top_banner .container .detail a
+{
+    font-size: 12px;   
+}
+}
+
+
 
 
 

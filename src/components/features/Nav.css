@@ -276,7 +276,27 @@
         text-decoration: none;
         color:white;
         border: none;
-    };
+    }
+
+   
+  }
+
+  @media screen and (max-width: 730px)
+  {
+        .account p
+      {
+        display: none;   
+      }
+
+      .account .user_icon
+      {
+        display: none;
+      }
+
+      .page_header .container
+      {
+        display: none;
+      }
   }
 
 

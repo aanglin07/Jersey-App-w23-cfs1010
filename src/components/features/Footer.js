@@ -13,7 +13,7 @@ const Footer = () => {
             <div className='container'>
                 <div className='about'>
                    
-                   <div className='app_social_resp'>
+                   
                     <div className='app_name'>
                     <Link to="/" className='link'><h1>Jersey App</h1></Link>
                     </div>
@@ -27,10 +27,10 @@ const Footer = () => {
                         
                 </div> 
                 
-                                              
+                <p>{"©" + currentYear} Jersey App</p>                        
                     </div>
-                    </div>
-                    <p>{"©" + currentYear} Jersey App</p> 
+                    
+                    
                    
                 </div>
             

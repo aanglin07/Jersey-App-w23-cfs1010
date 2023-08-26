@@ -21,3 +21,13 @@
         
     }
 }
+
+@media screen and (max-width: 720px)
+{
+    .app_name h1
+    {
+        padding-left: 160px;
+        padding-right: 60px;
+    }
+
+}
