@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-.footer
+footer
 {
     padding: 30px 40px;
     width:100%;
@@ -14,7 +14,7 @@
     
 }
 
-.footer .container
+footer .container
 {
     max-width: 100%;
     display: flex;
@@ -22,26 +22,26 @@
     
 }
 
-.footer .container .about
+footer .container .about
 {
     max-width: 30%;
 }
 
-.footer .container .about .detail p{
+footer .container .about .detail p{
     margin-top: 20px;
     font-size: 16px;
     color: grey;
     text-align: center;
 }
 
-.footer .container .about .detail .icon
+footer .container .about .detail .icon
 {
     margin-top: 20px;
     display: flex;
     padding-left: 0px;
 }
 
-.footer .container .about .detail .icon li
+footer .container .about .detail .icon li
 {
     margin-left: 20px;
     list-style: none;
@@ -52,25 +52,25 @@
     color: white;
 }
 
-.footer .container .about .detail .icon li:hover
+footer .container .about .detail .icon li:hover
 {
     background: lightseagreen;
 }
 
 
-.footer .container .account
+footer .container .account
 {
     margin-right: 100px;
     
 }
 
-.footer .container .account h3
+footer .container .account h3
 {
     font-size: 32px;
     color:white;
 }
 
-.footer .container .account ul
+footer .container .account ul
 {
     margin-top: 10px;
     margin-left: 20px;
@@ -86,20 +86,20 @@
     cursor: pointer;
 }
 
-.footer .container .account ul li:hover
+footer .container .account ul li:hover
 {
     color: lightseagreen;
 }
 
 /* footer pages */
 
-.footer .container .page
+footer .container .page
 {
     margin-right: 100px;
     
 }
 
-.footer .container .page h3
+footer .container .page h3
 {
     font-size: 32px;
     color: white;
@@ -111,7 +111,7 @@
     margin-left: 20px;
 }
 
-.footer .container .page ul li
+footer .container .page ul li
 {
     
     margin-top: 5px;
@@ -121,21 +121,21 @@
     color: white;
 }
 
-.footer .container .page ul li:hover
+footer .container .page ul li:hover
 {
     color: lightseagreen;
 }
 
-.footer .app_name h1
+footer .app_name h1
 {
     color: white;
 }
 
-.footer .container .page ul a
+footer .container .page ul a
 {
     text-decoration: none;
 }
-.footer .container .account ul a
+footer .container .account ul a
 {
     text-decoration: none;
     color: white;
@@ -143,7 +143,7 @@
 
 @media screen and (max-width: 870px)
 {
-    .footer .container
+    footer .container
 {
     max-width: 100%;
     display: flex;
@@ -155,13 +155,13 @@
 
 @media screen and (max-width: 870px)
 {
-    .footer .container .page
+    footer .container .page
 {
     display: none;
     
 }
 
-.footer
+footer
 {
     height: 100%;
 }
@@ -171,7 +171,7 @@
 
 @media screen and (max-width: 870px)
 {
-    .footer .container .account
+    footer .container .account
     {
         display: none;
     }
@@ -188,7 +188,7 @@
 
 @media screen and (max-width: 580px)
 {
-    .footer .container
+    footer .container
     {
         display: flex;
        

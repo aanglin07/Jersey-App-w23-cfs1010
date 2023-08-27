@@ -40,7 +40,7 @@ const Nav = () => {
               <LoginSection isAuthenticated={isAuthenticated} user={user} />                  
             </div>
             
-            <div className='nav_header'>                        
+            <nav>                        
               <div className='menu_container'>
                   <div className='nav'>                 
                   <ul>
@@ -60,7 +60,7 @@ const Nav = () => {
                   }                     
                   </div>
               </div>
-            </div>          
+            </nav>          
       </div>
   )     
   

@@ -25,11 +25,11 @@ export const Contact = () => {
         <div>
             <h2> Contact Us</h2><br />
             <form ref={form} onSubmit={sendEmail}>
-                <input type='text' placeholder='Full Name' name='user_name' required /><br /><br />
-                <input type='email' placeholder='Email' name='user_email'  required /><br /><br />
-                <input type='text' placeholder='Subject' name='subject' required /><br /><br />
-                <textarea name='message' placeholder='Message' cols="30" rows="10"></textarea><br />
-                <button type='submit' className='--btn'>Send Message</button>              
+                <input type='text' placeholder='Full Name' name='user_name' title='Enter Full Name' required /><br /><br />
+                <input type='email' placeholder='Email' name='user_email' title='Enter Email' required /><br /><br />
+                <input type='text' placeholder='Subject' name='subject' title='Enter Subject' required /><br /><br />
+                <textarea name='message' placeholder='Message' cols="30" rows="10" title='Enter Message'></textarea><br />
+                <button type='submit' className='--btn' title='Submit'>Send Message</button>              
 
             </form>
 

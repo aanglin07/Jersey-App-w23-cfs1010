@@ -82,7 +82,7 @@
 
 }
 
-.nav_header
+nav
 {
     width:100%;
     padding:20px 30px;
@@ -91,7 +91,7 @@
     
 }
 
-.nav_header .menu_container
+nav .menu_container
 {
     display: flex;
     max-width: 100%;
@@ -100,32 +100,32 @@
     
 }
 
-.nav_header .menu_container .nav ul
+nav .menu_container .nav ul
 {
     display:flex;
 }
 
-.nav_header .menu_container .nav ul li
+nav .menu_container .nav ul li
 {
     margin-left: 20px;
     list-style: none;
     
 }
 
-.nav_header .menu_container .nav ul li .link
+nav .menu_container .nav ul li .link
 {
     text-decoration: none;
     color:white;
 }
 
-.nav_header .menu_container .login
+nav .menu_container .login
 {
     margin-right: 20px;
     font-size: 22px;
     cursor: pointer;
 }
 
-.nav_header .menu_container .login p
+nav .menu_container .login p
 {
     margin-right: 100px;
 }
@@ -235,7 +235,7 @@
     
     }
 
-    .nav_header
+    nav
     {
         display: none;
     }
@@ -265,7 +265,7 @@
         margin-right: 15px;
     }
 
-    .nav_header .menu_container
+    nav .menu_container
     {
         display: none;
     }

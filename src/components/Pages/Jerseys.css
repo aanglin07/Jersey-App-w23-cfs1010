@@ -107,7 +107,7 @@
     display:none;
 }
 
-.icon li
+.icon button
 {
     padding: 10px 10px;
     list-style: none;
@@ -126,7 +126,7 @@
     padding-left: 80px;
 }
 
-.icon li:hover
+.icon button:hover
 {
   background: lightblue;
 }

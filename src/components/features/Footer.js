@@ -9,7 +9,7 @@ const Footer = () => {
     let currentYear = new Date().getFullYear();
   return (
     <>
-        <div className='footer'>
+        <footer>
             <div className='container'>
                 <div className='about'>
                    
@@ -54,7 +54,7 @@ const Footer = () => {
          
             </div>
             
-        </div>
+        </footer>
     </>
   )
 }

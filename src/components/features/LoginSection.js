@@ -18,7 +18,7 @@ const LoginSection = ({ isAuthenticated, user }) => (
           )}
           <div className="bag_icon">
             <Link to="/wishlist" className="link">
-              <BsFillBagHeartFill />
+              <BsFillBagHeartFill title="Bag"/>
             </Link>
           </div>
         </div>

@@ -87,7 +87,7 @@ const Jerseys = ({jersey, setJersey, detail, view, close, setClose, addToWishlis
       <h2># Jerseys</h2>
       <p>Home . Jerseys</p>
         <div className='search_box'>
-            <input type='text' value={query} placeholder='Search Team...' autoComplete='off' onChange={(e) => setQuery(e.target.value)} />
+            <input type='text' value={query} placeholder='Search Team...' autoComplete='off' onChange={(e) => setQuery(e.target.value)} title='Search'/>
             <button onClick={()=>searchbtn(query)}>Search</button>
         </div>
         <div className="dropdown">
@@ -129,13 +129,13 @@ const Jerseys = ({jersey, setJersey, detail, view, close, setClose, addToWishlis
                                 <div className='icon'>
                                 {
                                   isAuthenticated ?
-                                  <li onClick={() => addToWishlist(curElm)}><RiHeartAddLine /></li>
+                                  <button title='Add to Wishlist' onClick={() => addToWishlist(curElm)}><RiHeartAddLine /></button>
                                   :
-                                  <li onClick={() => loginWithRedirect()}><RiHeartAddLine /></li>
+                                  <button title='View' onClick={() => loginWithRedirect()}><RiHeartAddLine /></button>
 
                                 }
                                             
-                                            <li onClick={()=> view (curElm)}><BsEye /></li>
+                                            <button title='View' onClick={()=> view (curElm)}><BsEye /></button>
                                 </div>
                                 <div className='img_box'>
                                         
