@@ -1,0 +1,341 @@
+*
+{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.affiliate
+{
+    padding: 10px 30px;
+    width: 100%;
+    background: black;
+    display: flex;
+}
+
+.affiliate .banner_icon{
+    color: white;
+    font-size: 32px;
+}
+
+.affiliate p
+{
+    margin-left: 10px;
+    color:white;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.login p
+
+{
+    color: white;
+}
+
+.main_header
+{
+    padding: 30px 40px;
+    width: 100%;
+    border-bottom: 1px solid gray
+}
+
+.main_header .container
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_header .container .icon
+{
+    display: flex;
+    margin-right: 50px;
+}
+
+.main_header .container .icon .account
+{
+    display: flex;
+    margin-right: 30px;
+   
+}
+
+.main_header .container .icon .account .user_icon
+{
+    margin-right: 10px;
+    font-size: 22px;
+    color: black;
+    cursor: pointer;
+}
+
+.main_header .container .icon .account p
+{
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+.main_header .container .icon .bag_icon .link
+{
+    font-size: 22px;
+    cursor: pointer;
+   
+
+}
+
+nav
+{
+    width:100%;
+    padding:20px 30px;
+    box-shadow: gray 0px 5px 15px;
+    background: black;
+    
+}
+
+nav .menu_container
+{
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    
+    
+}
+
+nav .menu_container .nav ul
+{
+    display:flex;
+}
+
+nav .menu_container .nav ul li
+{
+    margin-left: 20px;
+    list-style: none;
+    
+}
+
+nav .menu_container .nav ul li .link
+{
+    text-decoration: none;
+    color:white;
+}
+
+nav .menu_container .login
+{
+    margin-right: 20px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+nav .menu_container .login p
+{
+    margin-right: 100px;
+}
+.search_box
+{
+    margin-right: 30px;
+}
+
+.search_box input
+{
+    outline: none;
+    padding: 10px 30px;
+    border: 3px solid black;
+    width: 300px;
+    color: grey;
+}
+
+.search_box button
+{
+    border: 3px solid black;
+    outline: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+.main_header .navMenu
+{
+    display:none;
+    position:relative;
+    top:-50px;
+    /* left:0.5rem; */
+    flex-direction:column;
+    justify-content:space-between;
+    width:2.25rem;
+    height:2rem;
+    
+}
+
+.main_header .navMenu span
+{
+    height:0.4rem;
+    width:100%;
+    background-color:black;
+    border-radius:0.2rem;
+}
+
+.resp_menu ul
+{
+    display: none;
+}
+
+.loginInfo .icon
+{
+    margin-right: 100px;
+}
+
+@media screen and (max-width: 790px){
+
+    .main_header .navMenu{
+      display:flex;
+    }
+    .main_header .navMenu{
+      top:5px;
+    }
+  
+    .resp_nav{
+      flex-direction:column;
+      align-items:start;
+      background-color:#ffffff;
+      margin-top: 40px;
+      display: block;
+      
+    }
+    .resp_nav ul{
+  
+      /* display:none; */
+      flex-direction:column;
+      width:30%;
+      background-color:black;
+      margin-left: -300px;
+      
+    }
+  
+    .resp_nav ul li{
+      text-align:center;
+    }
+  
+    .resp_nav ul li a{
+      margin:0.2rem 0.5rem;
+      border:1px solid white;
+    }
+    .resp_nav ul li a:not(.active):hover{
+        background-color:grey;
+      }
+
+    .resp_nav ul.open{
+      display:flex;
+      width:200px;
+      height:200px;
+      padding-top:10px;
+      border-radius:0.5rem;
+      margin-left: -70px;
+      position:relative !important;z-index: 10;
+      /* position:relative !important;z-index:999 */     
+    
+    }
+
+    nav
+    {
+        display: none;
+    }
+
+    .main_header
+    {
+        display: flex;
+        justify-content: space-around;
+        height: 141px;
+        position:relative !important;z-index:2;
+      
+    }
+
+    .main_header .container .icon
+    {
+        margin-top: 10px;
+        
+    }
+    
+    .loginInfo
+    {
+        padding-left: 50px;
+    }
+
+    .main_header .container .icon .account
+    {
+        margin-right: 15px;
+    }
+
+    nav .menu_container
+    {
+        display: none;
+    }
+
+    .resp_menu .resp_nav ul li
+    {
+        list-style: none;
+    }
+
+    .resp_menu .resp_nav ul li a
+    {
+        text-decoration: none;
+        color:white;
+        border: none;
+    }
+
+   
+  }
+
+  @media screen and (max-width: 730px)
+  {
+        .account p
+      {
+        display: none;   
+      }
+
+      .account .user_icon
+      {
+        display: none;
+      }
+
+      .page_header .container
+      {
+        display: none;
+      }
+
+      .resp_nav ul.open
+    {
+        margin-left: -300px;
+    }
+  
+  }
+
+  @media screen and (max-width: 490px)
+  {
+    .resp_nav ul.open
+    {
+        margin-left: -160px;
+    }
+  }
+
+  @media screen and (max-width: 506px)
+  {
+    .resp_nav ul.open
+    {
+        margin-left: -170px;
+    }
+  }
+
+  @media screen and (max-width: 722px)
+  {
+    .resp_nav ul.open
+    {
+        margin-left: -290px;
+    }
+  }
+  @media screen and (max-width: 600px)
+  {
+    .resp_nav ul.open
+    {
+        margin-left: -230px;
+    }
+  }

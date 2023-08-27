@@ -1,0 +1,326 @@
+*
+{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.jerseys
+{
+    padding: 30px 40px;
+    width: 100%;
+}
+
+.jerseys h2
+{
+    font-size: 42px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.jerseys p
+{
+    margin-top: 10px;
+    color: grey;
+}
+
+.jerseys .container
+{
+    margin-top: 20px;
+    max-width: 100%;
+    left: 0px;
+    display: flex;
+    
+}
+.jerseys .container .filter
+{
+    padding: 20px 30px;
+}
+
+.jerseys .container .filter .leagues h3
+{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.jerseys .container .filter .leagues ul
+{
+    margin-top: 10px;
+}
+
+.jerseys .container .filter .leagues ul li
+{
+    list-style: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.box img
+{
+    width: 250px;
+    height: 250px;
+}
+
+/* .jerseybox
+{
+    margin-left: 0px;
+} */
+
+.jerseybox .container
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    
+}
+
+.jerseybox .container .box
+{
+    margin: 20px;
+    padding: 20px;  
+    cursor: pointer;  
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+    height: 430px;
+        
+}
+
+.jerseybox .container .box:hover
+{
+    border: 1px solid rgb(3, 158, 209) ; 
+    border-radius: 0.5rem;
+}
+
+.icon
+{
+    z-index: 1;
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    transition: 0.5s;
+    padding-left: 80px;
+    display:none;
+}
+
+.icon button
+{
+    padding: 10px 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgray;   
+   
+}
+.box:hover .icon
+{
+    display: block;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    transition: 0.5s;
+    padding-left: 80px;
+}
+
+.icon button:hover
+{
+  background: lightblue;
+}
+
+.img_box
+{
+    padding-top: 20px;
+}
+
+.jersey_detail
+{
+    margin-top: 30px;
+    padding: 30px 40px;
+    width: 100%;
+    height: 130%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.24);
+    z-index: 1;
+    margin-top: -15%;
+
+}
+
+.jersey_detail .container
+{
+    margin-top: 5%;
+    margin-left: 20%;
+    width: 700px;
+    height: 500px;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    
+}
+
+.jersey_detail .container .jerseybox
+
+{
+    display: flex;
+    padding-top: 40px;
+}
+
+.img-box img
+{
+    height: 300px;
+    width: 300px;
+}
+
+.closebtn
+{
+    margin-left: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.jerseybox .detailInfo h4
+{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 200;
+    color: lightgray;
+    letter-spacing: 1px;
+}
+
+.jerseybox .detail button
+
+{
+    margin-top: 30px;
+    padding: 15px;
+    font-size: 16px;
+    color: white;
+    background: black;
+    transition: 0.5s;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.jerseybox .detail button:hover
+{
+    background: lightseagreen;
+}
+
+.jerseys .search_box
+{
+    margin-left: 200px;
+}
+
+.jerseybox .detailInfo button
+{
+    text-decoration: none;
+    color:white;
+    padding:10px 20px;
+    background: black;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.jerseybox .detailInfo button:hover
+{
+    background: lightseagreen;
+}
+
+.dropdown
+{
+    display:none;
+    padding-top: 20px;
+    margin-left: 200px;
+    margin-right: 20px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    height: 10px;
+}
+
+.dropdown button
+{
+    margin-left: 20px;
+    text-decoration: none;
+    color:white;
+    padding:10px 20px;
+    background: black;
+}
+
+@media screen and (max-width: 900px){
+    .jerseys .search_box
+    {
+        margin-left: 200px;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .dropdown
+    {
+        display: block;
+        margin-left: 150px;
+    }
+}
+
+@media screen and (max-width: 780px)
+{
+    .dropdown
+    {
+        display: block;
+        margin-left: 20px;
+        
+    }
+    .container .filter
+    {
+        display: none;
+    }
+
+    .search_box
+    {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 750px)
+{
+    .container .filter
+    {
+        display: none;
+    }
+    .jerseys .search_box
+    {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .dropdown
+    {
+        display: block;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 518px)
+{
+    .search_box
+    {
+        width: 300px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 502px)
+{
+    .search_box
+    {
+        width: 400px;
+        height: 40px;
+    }
+}
