@@ -1,6 +1,8 @@
 import { render, screen, cleanup } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import Header from "./components/features/Header";
+import Header from "./Header";
+
+
 
 afterEach(() => {
     cleanup();
@@ -13,4 +15,4 @@ render(<Header />)
 let textElem = screen.getByTestId("text");
 
 expect(textElem).toBeInTheDocument();
-})
+});

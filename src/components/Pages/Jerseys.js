@@ -9,6 +9,7 @@ import {React, useState} from 'react';
 import { Link } from 'react-router-dom';
 
 
+
 const Jerseys = ({jersey, setJersey, detail, view, close, setClose, addToWishlist}) => {
   const [query, setQuery] = useState("")
   const { loginWithRedirect, isAuthenticated} = useAuth0();
